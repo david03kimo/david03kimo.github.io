@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廖祐呈講師個人網頁</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #8B4513;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: block;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        nav {
+            background-color: #654321;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #8B4513;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile-image.jpg" alt="廖祐呈講師照片" class="profile-image">
+        <h1>廖祐呈講師</h1>
+        <p>專注領導力培訓 | 催化師+教練</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">個人介紹</a></li>
+            <li><a href="#courses">課程介紹</a></li>
+            <li><a href="#booking">預約課程</a></li>
+            <li><a href="#oneonone">預約1:1</a></li>
+            <li><a href="#onlinecourses">購買線上課程</a></li>
+            <li><a href="#contact">連絡信箱</a></li>
+            <li><a href="#testimonials">學員見證</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="intro" class="section">
+            <h2>個人介紹</h2>
+            <p>廖祐呈，1973年生於台灣，畢業於台灣政治大學MBA及台灣交通大學土木系。現任康師傅、富士康特邀講師及多家培訓機構高級講師，擁有豐富的咨询及培訓經驗，專注於領導力培訓和教練技術。</p>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>課程介紹</h2>
+            <p>以下是廖祐呈講師的核心課程，旨在提升領導力及團隊協作效率：</p>
+            <ul>
+                <li><strong>情緒與壓力管理暨領袖心態：</strong>該課程包含情緒的起源、負責任心態的建立、正向心態的建立等模組，幫助學員管理壓力並培養領導心態。</li>
+                <li><strong>教練式團隊建设与协作：</strong>透過团队协作的五大障碍与对策、建立团队信任氛围等内容，強化團隊合作與溝通技巧。</li>
+                <li><strong>教練式部屬培育与辅导：</strong>探討如何有效地培育与辅导部属，包括个别培育部属方法技巧和集中培育部属方法技巧，以提升部屬的绩效。</li>
+            </ul>
+        </section>
+
+        <section id="booking" class="section">
+            <h2>預約課程</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" placeholder="您的名字">
+
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" placeholder="您的電子郵件地址">
+
+                <label for="course">選擇課程:</label>
+                <select id="course" name="course">
+                    <option value="emotional-management">情緒與壓力管理暨領袖心態</option>
+                    <option value="team-building">教練式團隊建設與協作</option>
+                    <option value="staff-training">教練式部屬培育與輔導</option>
+                </select>
+
+                <input type="submit" value="提交">
+            </form>
+        </section>
+
+        <section id="oneonone" class="section">
+            <h2>預約1:1</h2>
+            <form action="submit_oneonone.php" method="post">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" placeholder="您的名字">
+
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" placeholder="您的電子郵件地址">
+
+                <input type="submit" value="提交">
+            </form>
+        </section>
+
+        <section id="onlinecourses" class="section">
+            <h2>購買線上課程</h2>
+            <form action="submit_onlinecourse.php" method="post">
+                <label for="courses">選擇線上課程:</label>
+                <select id="courses" name="courses">
+                    <option value="emotional-management-online">情緒與壓力管理暨領袖心態（線上）</option>
+                    <option value="team-building-online">教練式團隊建设与协作（線上）</option>
+                    <option value="staff-training-online">教練式部屬培育与辅导（線上）</option>
+                </select>
+
+                <input type="submit" value="購買">
+            </form>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>連絡信箱</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" placeholder="您的名字">
+
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" placeholder="您的電子郵件地址">
+
+                <label for="message">訊息:</label>
+                <textarea id="message" name="message" placeholder="寫下您的訊息..." style="height:200px"></textarea>
+
+                <input type="submit" value="發送">
+            </form>
+        </section>
+
+        <section id="testimonials" class="section">
+            <h2>學員見證</h2>
+            <p>這裡將展示學員的反饋和評價。</p>
+        </section>
+    </div>
+</body>
+</html>
