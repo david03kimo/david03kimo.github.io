@@ -1,1 +1,0 @@
-# david03kimo.github.io
